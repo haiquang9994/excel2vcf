@@ -46,7 +46,7 @@ TEL;TYPE=CELL;TYPE=PREF:%s
         }
 
         header('Content-Type: text/x-vcard');
-        header('Content-Disposition: inline; filename= "'.$filename.'"');
+        header("Content-Disposition: inline; filename=$filename");
         echo $text;
     }
 } else {
